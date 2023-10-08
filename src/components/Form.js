@@ -6,8 +6,8 @@ import axios from '../Axios';
 const Form = () => {
   const [data, setData] = useState({
     event_name: '',
-    start_time: '',
-    end_time: '',
+    start_date: '',
+    end_date: '',
     location: '',
     description: '',
     category: '',
@@ -71,28 +71,28 @@ const Form = () => {
           </div>
 
           <div className='form-group'>
-            <label htmlFor='start_time' className='label-inline'>
+            <label htmlFor='start_date' className='label-inline'>
               Start Date:
             </label>
             <input
               type='date'
-              id='start_time'
-              name='start_time'
-              value={data.start_time}
+              id='start_date'
+              name='start_date'
+              value={data.start_date}
               onChange={handleChange}
               required
             />
           </div>
 
           <div className='form-group'>
-            <label htmlFor='end_time' className='label-inline'>
+            <label htmlFor='end_date' className='label-inline'>
               End Date:
             </label>
             <input
               type='date'
-              id='end_time'
-              name='end_time'
-              value={data.end_time}
+              id='end_date'
+              name='end_date'
+              value={data.end_date}
               onChange={handleChange}
               required
             />
